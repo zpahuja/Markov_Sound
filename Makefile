@@ -9,7 +9,6 @@ all : $(EXE)
 
 $(EXE) : $(OBJS)
 	$(LINKER) $(OBJS) $(LINKER_OPTS) -o $(EXE)
-#testscene will need its own exename,objects, linke through $(EXE)
 
 alsa_main.o : alsa_main.cpp
 	$(COMPILER) $(COMPILER_OPTS) alsa_main.cpp
