@@ -3,7 +3,7 @@ OBJS = alsa_main.o sin_wave.o
 COMPILER = g++
 COMPILER_OPTS = -c -g -O0 -Wall
 LINKER = g++
-LINKER_OPTS = -lpng
+LINKER_OPTS = -lasound
 
 all : $(EXE)
 
